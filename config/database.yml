@@ -23,11 +23,5 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  host: <%= ENV['RAILS_DATABASE_HOST'] %>
-  port: 5432
-  encoding: utf8
-  database:  <%= ENV['RAILS_DATABASE_NAME'] %>
-  username:  <%= ENV['RAILS_DATABASE_USER'] %>
-  password:  <%= ENV['RAILS_DATABASE_PASSWORD'] %>
+  encoding: unicode
   pool: 5
-  timeout: 5000
