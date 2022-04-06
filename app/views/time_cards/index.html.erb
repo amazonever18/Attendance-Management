@@ -1,0 +1,41 @@
+<% year=@year %>
+<% month=@month %>
+<h1><%= year %>年<%= month %>月の勤務表</h1>
+<table class="table table-bordered">
+  <thead class="table-light">
+    <tr>
+      <th>日付</th>
+      <th>曜日</th>
+      <th>出勤時間</th>
+      <th>退勤時間</th>
+      <th>勤務時間</th>
+    </tr>
+  </thead>
+  <% each_date_in_month(@year, @month) do |date, index| %>
+    <tbody>
+      <tr>
+        <td>
+          <%= date_in_japanese(date, :month_day) %>
+        </td>
+        <td>
+          <%= day_of_the_week_in_japanese(date, :short) %>
+        </td>
+      <% if @time_cards[index] %>
+        <td>
+          <%= time_str(@time_cards[index].in_at) %>
+        </td>
+        <td>
+          <%= time_str(@time_cards[index].out_at) %>
+        </td>
+        <td>
+          <%= time_diff_str(@time_cards[index].work_hours_in_seconds) %>
+        </td>
+      <% else %>
+        <td></td>
+        <td></td>
+        <td></td>
+      <% end %>
+      </tr>
+    </tbody>
+  <% end %>
+</table>

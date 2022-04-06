@@ -1,0 +1,22 @@
+<h1>マイページ</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <% date=date_in_japanese %>
+    <p>今日は <%= date %> です。</p>
+    <p>
+      現在ステータス：
+      <span id="work-status">
+        <%= working_status(@time_card) %>
+      </span>
+    </p>
+    <%= form_tag('/timecard', remote: true, id: 'timecard-form') do |f| %>
+      <div class="submit_form">
+      <%= button_tag('出勤', name: 'in', id: 'in', class: 'btn btn-outline-primary btn-lg', disabled: !!@time_card.in_at) %>
+      <%= button_tag('退勤', name: 'out', id: 'out', class: 'btn btn-outline-primary btn-lg', disabled: !@time_card.in_at || !!@time_card.out_at) %>
+      </div>
+    <% end %>
+    <div>
+      <%= button_to '勤務表を確認する', monthly_path, method: :get, class: 'btn btn-primary' %>
+    </div>
+  </div>
+</div>

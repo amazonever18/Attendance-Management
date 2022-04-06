@@ -1,0 +1,22 @@
+require 'test_helper'
+
+class UsersLoginTest < ActionDispatch::IntegrationTest
+  def setup
+    @user = users(:user_1)
+  end
+  
+  test "login with valid information followed by logout" do
+    get login_path
+    post login_path, params: { session: { email:    @user.email,
+                                          password: 'password' } }
+    assert is_logged_in?
+    assert_redirected_to root_path
+    follow_redirect!
+    assert_select 'h1', 'タイムカード'
+
+    delete logout_path
+    assert_not is_logged_in?
+    follow_redirect!
+    assert_select 'h1', 'ログイン'
+  end
+end
