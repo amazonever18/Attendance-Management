@@ -1,24 +1,101 @@
-# README
+# 勤怠管理システム
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<br>
 
-Things you may want to cover:
+概要説明
 
-* Ruby version
+[//]: # (![IMG_0270]&#40;https://user-images.githubusercontent.com/74766908/148157962-20b19cf2-7c12-494a-9263-d25775c61e87.jpg&#41;)
 
-* System dependencies
+デモサイト<br>
 
-* Configuration
+[//]: # (https://sector-strength.herokuapp.com)
 
-* Database creation
+<br>
 
-* Database initialization
+## 開発のきっかけ
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+<br>
 
-* ...
+## Webアプリケーションの説明
+
+
+
+<br>
+
+## 簡単な内部ロジックの説明
+
+#### 1. 
+
+
+
+<br>
+
+#### 2. 
+
+
+<br>
+
+#### 3. 
+
+
+<br>
+
+#### 4. 
+
+
+
+<br>
+
+## 工夫した点
+
+* 
+
+* 
+
+* 
+
+* 
+
+<br>
+
+## 解決出来ること
+
+#### 1. 
+
+
+<br>
+
+#### 2. 
+
+<br>
+
+## 今後の展望
+
+* 
+
+* 
+
+* 
+
+* 
+
+<br>
+
+## 開発技術
+#### 言語
+* 
+* 
+* 
+* 
+
+#### フレームワーク・ライブラリ
+* 
+* 
+* 
+* 
+
+
+#### API・データ
+* 
