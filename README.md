@@ -2,13 +2,12 @@
 
 <br>
 
-概要説明
+Ruby on Railsで作成した簡単な勤怠管理アプリです。
 
-[//]: # (![IMG_0270]&#40;https://user-images.githubusercontent.com/74766908/148157962-20b19cf2-7c12-494a-9263-d25775c61e87.jpg&#41;)
+![画面収録 2022-04-07 11 50 00](https://user-images.githubusercontent.com/74766908/162113579-4e188bc2-f925-4ed0-a840-553dbd90fa88.gif)
 
-デモサイト<br>
-
-[//]: # (https://sector-strength.herokuapp.com)
+サイトURL<br>
+https://attendance-management-20220407.herokuapp.com
 
 <br>
 
