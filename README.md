@@ -1,24 +1,100 @@
-# README
+# 勤怠管理システム
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<br>
 
-Things you may want to cover:
+Ruby on Railsで作成した簡単な勤怠管理アプリです。
 
-* Ruby version
+![画面収録 2022-04-07 11 50 00](https://user-images.githubusercontent.com/74766908/162113579-4e188bc2-f925-4ed0-a840-553dbd90fa88.gif)
 
-* System dependencies
+サイトURL<br>
+https://attendance-management-20220407.herokuapp.com
 
-* Configuration
+<br>
 
-* Database creation
+## 開発のきっかけ
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+<br>
 
-* Deployment instructions
+## Webアプリケーションの説明
 
-* ...
+
+
+<br>
+
+## 簡単な内部ロジックの説明
+
+#### 1. 
+
+
+
+<br>
+
+#### 2. 
+
+
+<br>
+
+#### 3. 
+
+
+<br>
+
+#### 4. 
+
+
+
+<br>
+
+## 工夫した点
+
+* 
+
+* 
+
+* 
+
+* 
+
+<br>
+
+## 解決出来ること
+
+#### 1. 
+
+
+<br>
+
+#### 2. 
+
+<br>
+
+## 今後の展望
+
+* 
+
+* 
+
+* 
+
+* 
+
+<br>
+
+## 開発技術
+#### 言語
+* 
+* 
+* 
+* 
+
+#### フレームワーク・ライブラリ
+* 
+* 
+* 
+* 
+
+
+#### API・データ
+* 
