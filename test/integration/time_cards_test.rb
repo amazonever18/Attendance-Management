@@ -14,7 +14,7 @@ class TestCardsTest < ActionDispatch::IntegrationTest
 
     log_in_as(@user)
     assert_difference 'TimeCard.count', 1 do
-      post timecard_path, xhr: true, params: { out: '退社' }
+      post timecard_path, xhr: true, params: { out: '退勤' }
     end
   end
 end

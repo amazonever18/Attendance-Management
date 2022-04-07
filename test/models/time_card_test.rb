@@ -3,7 +3,7 @@ require 'test_helper'
 class TimeCardTest < ActiveSupport::TestCase
   def setup
     @user = users(:user_1)
-    @time_card = TimeCard.new(user: @user, year: 2017, month: 11, day: 4)
+    @time_card = TimeCard.new(user: @user, year: 2022, month: 4, day: 4)
   end
 
   def assert_valid
@@ -34,27 +34,27 @@ class TimeCardTest < ActiveSupport::TestCase
   end
 
   test 'year, month, date should be positive integer' do
-    time_card = TimeCard.new(user: @user, year: 'abcd', month: 11, day: 4)
+    time_card = TimeCard.new(user: @user, year: 'abcd', month: 4, day: 4)
     assert_not time_card.valid?
 
-    time_card = TimeCard.new(user: @user, year: -1, month: 11, day: 4)
+    time_card = TimeCard.new(user: @user, year: -1, month: 4, day: 4)
     assert_not time_card.valid?
     
-    time_card = TimeCard.new(user: @user, year: 2017, month: 'ab', day: 4)
+    time_card = TimeCard.new(user: @user, year: 2022, month: 'ab', day: 4)
     assert_not time_card.valid?
   
-    time_card = TimeCard.new(user: @user, year: 2017, month: -1, day: 4)
+    time_card = TimeCard.new(user: @user, year: 2022, month: -1, day: 4)
     assert_not time_card.valid?
 
-    time_card = TimeCard.new(user: @user, year: 2017, month: 11, day: 'ab')
+    time_card = TimeCard.new(user: @user, year: 2022, month: 4, day: 'ab')
     assert_not time_card.valid?
 
-    time_card = TimeCard.new(user: @user, year: 2017, month: 11, day: -1)
+    time_card = TimeCard.new(user: @user, year: 2022, month: 4, day: -1)
     assert_not time_card.valid?
   end
 
   test 'combination of year, month, date should be valid date' do
-    time_card = TimeCard.new(user: @user, year: 2017, month: 2, day: 29)
+    time_card = TimeCard.new(user: @user, year: 2022, month: 2, day: 29)
     assert_not time_card.valid?
   end
 
