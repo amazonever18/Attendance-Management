@@ -79,6 +79,7 @@ group :test do
 
   gem "minitest"
   gem "minitest-reporters"
+  gem 'rails-controller-testing'
 end
 
 group :production do
