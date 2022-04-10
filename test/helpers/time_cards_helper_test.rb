@@ -4,7 +4,7 @@ class TimeCardsHelperTest < ActionView::TestCase
 
   def setup
     @user = users(:user_1)
-    @time_card = TimeCard.new(user: @user, year: 2017, month: 11, day: 4)
+    @time_card = TimeCard.new(user: @user, year: 2022, month: 4, day: 4)
   end
 
   test 'time_diff_string' do
