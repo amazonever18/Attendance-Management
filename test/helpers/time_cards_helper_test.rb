@@ -3,7 +3,8 @@ require 'test_helper'
 class TimeCardsHelperTest < ActionView::TestCase
 
   def setup
-    @user = users(:user_1)
+    @user = User.new(name: '山田太郎', email: 'yamada_taro@example.com',
+                     password: 'password', password_confirmation: 'password')
     @time_card = TimeCard.new(user: @user, year: 2022, month: 4, day: 4)
   end
 
