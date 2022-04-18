@@ -2,8 +2,8 @@
 <h1>マイページ</h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <% date=date_in_japanese %>
-    <p>今日は <%= date %> です。</p>
+    <p>こんにちは、 <%= current_user.name %> さん</p>
+    <p>今日は <%= date_in_japanese %> です。</p>
     <p>
       現在ステータス：
       <span id="work-status">
