@@ -57,7 +57,7 @@ gem "sassc-rails"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  # gem "sqlite3"
+  gem "sqlite3"
   # gem 'ruby-debug-ide'
   # gem 'debase'
 end
@@ -84,5 +84,5 @@ group :test do
 end
 
 group :production do
-  # gem 'pg'
+  gem 'pg'
 end
